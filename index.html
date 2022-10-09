@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section>
+      <h1 class="section__basis">Learning css-selectors</h1>
+      <article class="section__article">
+        <h3 class="section__title">Common selectors</h3>
+        <dl>
+          <dt title="Specifity: 000">*</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Selector of all</h4>
+            <figure>
+              <blockquote>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code>
+                        &lt;div&gt; <br />
+                        &lt;p&gt;&lt;/p&gt; <br />
+                        &lt;/div&gt;
+                      </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                      <code>
+                        * {<br />
+                        background: blue;<br />}
+                      </code>
+                    </p>
+                  </li>
+                </ul>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 001">Tag</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Selector by html tag name</h4>
+            <figure>
+              <blockquote>
+                <p>
+                  <code>
+                    body, ul, p {
+                    <p>background: blue;</p>
+                    }</code
+                  >
+                </p>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 010">Class</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Selctor by html class attribute</h4>
+            <figure>
+              <blockquote>
+                <p>
+                  <code>
+                    .about-us, .about-us__header {
+                    <p>background: blue;</p>
+                    }</code
+                  >
+                </p>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 100">Id</dt>
+          <dd>
+            <h4>selctor by html id attribute</h4>
+            <figure>
+              <blockquote>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> &lt;section id="selector"&gt; </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                      <code>
+                        #selector {<br />
+                        background: blue;<br />}
+                      </code>
+                    </p>
+                  </li>
+                </ul>
+              </blockquote>
+            </figure>
+          </dd>
+        </dl>
+        <h2 class="section__title">Selectors of relation</h2>
+        <dl>
+          <dt title="Specifity: 001">></dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Selector of children</h4>
+            <figure>
+              <blockquote>
+                <code>
+                  body, ul, p {
+                  <p>background: blue;</p>
+                  }</code
+                >
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 010">Class</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">selctor by html class attribute</h4>
+            <figure>
+              <blockquote>
+                <code>
+                  .about-us, .about-us__header {
+                  <p>background: blue;</p>
+                  }</code
+                >
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 100">Id</dt>
+          <dd class="section__container">selctor by html id attribute</dd>
+        </dl>
+        <h2>Pseudoselectors of state</h2>
+        <button>Click Me</button>
+      </article>
+    </section>
+  </body>
+</html>
