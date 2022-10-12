@@ -74,7 +74,7 @@
           </dd>
           <dt title="Specifity: 100">Id</dt>
           <dd>
-            <h4>selctor by html id attribute</h4>
+            <h4 class="section__subtitle">Selctor by html id attribute</h4>
             <figure>
               <blockquote>
                 <ul>
@@ -98,39 +98,207 @@
             </figure>
           </dd>
         </dl>
-        <h2 class="section__title">Selectors of relation</h2>
+        <h2 class="section__title-two">Selectors of relation</h2>
         <dl>
-          <dt title="Specifity: 001">></dt>
+          <dt title="Specifity: 002">></dt>
           <dd class="section__container">
             <h4 class="section__subtitle">Selector of children</h4>
             <figure>
               <blockquote>
-                <code>
-                  body, ul, p {
-                  <p>background: blue;</p>
-                  }</code
-                >
+                <p>
+                  <code>
+                    body > ul > p {
+                    <p>background: blue;</p>
+                    }</code
+                  >
+                </p>
               </blockquote>
             </figure>
           </dd>
-          <dt title="Specifity: 010">Class</dt>
+          <dt title="Specifity: 002">' '</dt>
           <dd class="section__container">
-            <h4 class="section__subtitle">selctor by html class attribute</h4>
+            <h4 class="section__subtitle">Selctor of descendant</h4>
             <figure>
               <blockquote>
-                <code>
-                  .about-us, .about-us__header {
-                  <p>background: blue;</p>
-                  }</code
-                >
+                <p>
+                  <code>
+                    ul li {
+                    <p>background: blue;</p>
+                    }</code
+                  >
+                </p>
               </blockquote>
             </figure>
           </dd>
-          <dt title="Specifity: 100">Id</dt>
-          <dd class="section__container">selctor by html id attribute</dd>
+          <dt title="Specifity: 002">~</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Selctor of all neighbors</h4>
+            <figure>
+              <blockquote>
+                <p>
+                  <code>
+                    p ~ li {
+                    <p>background: blue;</p>
+                    }</code
+                  >
+                </p>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 002">+</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Selctor of next neighbor</h4>
+            <figure>
+              <blockquote>
+                <p>
+                  <code>
+                    ul + li {
+                    <p>background: blue;</p>
+                    }</code
+                  >
+                </p>
+              </blockquote>
+            </figure>
+          </dd>
         </dl>
-        <h2>Pseudoselectors of state</h2>
-        <button>Click Me</button>
+        <h2 class="section__title-two">Pseudoselectors of state</h2>
+        <dl>
+          <dt title="Specifity: 011">:last-child</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Pseudoselectors of last child</h4>
+            <figure>
+              <blockquote>
+                <p>
+                  <code>
+                    .about-us:last-child {
+                    <p>background: blue;</p>
+                    }</code
+                  >
+                </p>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 011">:hover</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Pseudoselctor hover</h4>
+            <figure>
+              <blockquote>
+                <p>
+                  <code>
+                    about-us:hover {
+                    <p>background: blue;</p>
+                    }</code
+                  >
+                </p>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 011">:focus</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Pseudoselctor focus</h4>
+            <figure>
+              <blockquote>
+                <p>
+                  <code>
+                    about-us:focus {
+                    <p>background: blue;</p>
+                    }</code
+                  >
+                </p>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 011">:nth-child()</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Pseudoselctor of nth child</h4>
+            <figure>
+              <blockquote>
+                <p>
+                  <code>
+                    about-us:nth-chid(1,2,3...n) {
+                    <p>background: blue;</p>
+                    }</code
+                  >
+                </p>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 011">:not(...)</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Pseudoselctor of not</h4>
+            <figure>
+              <blockquote>
+                <p>
+                  <code>
+                    about-us:not(...) {
+                    <p>background: blue;</p>
+                    }</code
+                  >
+                </p>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 011">:visited</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Pseudoselctor visited</h4>
+            <figure>
+              <blockquote>
+                <p>
+                  <code>
+                    about-us:visited {
+                    <p>background: blue;</p>
+                    }</code
+                  >
+                </p>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 011">:first-child</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Pseudoselctor of first-child</h4>
+            <figure>
+              <blockquote>
+                <p>
+                  <code>
+                    about-us:first-child {
+                    <p>background: blue;</p>
+                    }</code
+                  >
+                </p>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 011">:first-letter</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Pseudoselctor of first letter</h4>
+            <figure>
+              <blockquote>
+                <p>
+                  <code>
+                    about-us:first-letter {
+                    <p>background: blue;</p>
+                    }</code
+                  >
+                </p>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 011">:first-line</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Pseudoselctor of first line</h4>
+            <figure>
+              <blockquote>
+                <p>
+                  <code>
+                    about-us:first-line {
+                    <p>background: blue;</p>
+                    }</code
+                  >
+                </p>
+              </blockquote>
+            </figure>
+          </dd>
+        </dl>
       </article>
     </section>
   </body>
