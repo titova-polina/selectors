@@ -47,28 +47,51 @@
             <h4 class="section__subtitle">Selector by html tag name</h4>
             <figure>
               <blockquote>
-                <p>
-                  <code>
-                    body, ul, p {
-                    <p>background: blue;</p>
-                    }</code
-                  >
-                </p>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code>
+                        &lt;li&gt; <br />
+                        &lt;/li&gt;
+                      </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                      <code>
+                        li {<br />
+                        background: blue;<br />}
+                      </code>
+                    </p>
+                  </li>
+                </ul>
               </blockquote>
             </figure>
           </dd>
           <dt title="Specifity: 010">Class</dt>
           <dd class="section__container">
-            <h4 class="section__subtitle">Selctor by html class attribute</h4>
+            <h4 class="section__subtitle">Selector by html class attribute</h4>
             <figure>
               <blockquote>
-                <p>
-                  <code>
-                    .about-us, .about-us__header {
-                    <p>background: blue;</p>
-                    }</code
-                  >
-                </p>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> &lt;section class="about-us"&gt; </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                     <p>
+                      <code>
+                       .about-us {
+                        <br>background: blue;</br>
+                      }</code>
+                     </p>
+                  </li>
+                </ul>
               </blockquote>
             </figure>
           </dd>
@@ -105,196 +128,764 @@
             <h4 class="section__subtitle">Selector of children</h4>
             <figure>
               <blockquote>
-                <p>
-                  <code>
-                    body > ul > p {
-                    <p>background: blue;</p>
-                    }</code
-                  >
-                </p>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code>
+                        &lt;body&gt; <br />
+                        &lt;ul&gt; <br />
+                        &lt;li&gt; <br />
+                        &lt;/li&gt; <br />
+                        &lt;/ul&gt; <br />
+                        &lt;/body&gt;
+                      </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                      <code>
+                        body > ul > li {
+                         <br>background: blue;</br>
+                     }</code>
+                    </p>
+                  </li>
+                </ul>
               </blockquote>
             </figure>
           </dd>
           <dt title="Specifity: 002">' '</dt>
           <dd class="section__container">
-            <h4 class="section__subtitle">Selctor of descendant</h4>
+            <h4 class="section__subtitle">Selector of descendant</h4>
             <figure>
               <blockquote>
-                <p>
-                  <code>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code>
+                        &lt;ul&gt; <br />
+                        &lt;li&gt; <br />
+                        &lt;/li&gt; <br />
+                        &lt;li&gt; <br />
+                        &lt;/li&gt; <br />
+                        &lt;/ul&gt; <br />
+                      </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
                     ul li {
-                    <p>background: blue;</p>
-                    }</code
-                  >
-                </p>
+                    <br>background: blue;</br>
+                    }</code>
+                   </p>
+                  </li>
+                </ul>
               </blockquote>
             </figure>
           </dd>
           <dt title="Specifity: 002">~</dt>
           <dd class="section__container">
-            <h4 class="section__subtitle">Selctor of all neighbors</h4>
+            <h4 class="section__subtitle">Selector of all neighbors</h4>
             <figure>
               <blockquote>
-                <p>
-                  <code>
-                    p ~ li {
-                    <p>background: blue;</p>
-                    }</code
-                  >
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code>
+                        &lt;p&gt; <br />
+                        &lt;/p&gt; <br />
+                        &lt;li&gt; <br />
+                        &lt;/li&gt; <br />
+                        &lt;li&gt; <br />
+                        &lt;/li&gt; <br />
+                      </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                      <code>
+                        p ~ li {
+                         <br>background: blue;</br>
+                    } </code>
                 </p>
+                  </li>
+                </ul>
               </blockquote>
             </figure>
           </dd>
           <dt title="Specifity: 002">+</dt>
           <dd class="section__container">
-            <h4 class="section__subtitle">Selctor of next neighbor</h4>
+            <h4 class="section__subtitle">Selector of next neighbors</h4>
             <figure>
               <blockquote>
-                <p>
-                  <code>
-                    ul + li {
-                    <p>background: blue;</p>
-                    }</code
-                  >
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code>
+                        &lt;p&gt; <br />
+                        &lt;/p&gt; <br />
+                        &lt;li&gt; <br />
+                        &lt;/li&gt; <br />
+                      </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                     <p>
+                      <code>
+                        p + li {
+                        <br>background: blue;</br>
+                       }</code>
                 </p>
+                  </li>
+                </ul>
               </blockquote>
             </figure>
           </dd>
         </dl>
         <h2 class="section__title-two">Pseudoselectors of state</h2>
         <dl>
-          <dt title="Specifity: 011">:last-child</dt>
+          <dt title="Specifity: 020">:hover</dt>
           <dd class="section__container">
-            <h4 class="section__subtitle">Pseudoselectors of last child</h4>
+            <h4 class="section__subtitle">Selector of hover</h4>
             <figure>
               <blockquote>
-                <p>
-                  <code>
-                    .about-us:last-child {
-                    <p>background: blue;</p>
-                    }</code
-                  >
-                </p>
-              </blockquote>
-            </figure>
-          </dd>
-          <dt title="Specifity: 011">:hover</dt>
-          <dd class="section__container">
-            <h4 class="section__subtitle">Pseudoselctor hover</h4>
-            <figure>
-              <blockquote>
-                <p>
-                  <code>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> &lt;section class="about-us"&gt; </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
                     about-us:hover {
-                    <p>background: blue;</p>
+                    <br>background: blue;</br>
                     }</code
                   >
                 </p>
+                  </li>
+                </ul>
               </blockquote>
             </figure>
           </dd>
-          <dt title="Specifity: 011">:focus</dt>
+          <dt title="Specifity: 020">:focus</dt>
           <dd class="section__container">
-            <h4 class="section__subtitle">Pseudoselctor focus</h4>
+            <h4 class="section__subtitle">Selector of focus</h4>
             <figure>
               <blockquote>
-                <p>
-                  <code>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> &lt;section class="about-us"&gt; </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
                     about-us:focus {
-                    <p>background: blue;</p>
+                    <br>background: blue;</br>
                     }</code
                   >
                 </p>
+                  </li>
+                </ul>
               </blockquote>
             </figure>
           </dd>
-          <dt title="Specifity: 011">:nth-child()</dt>
+          <dt title="Specifity: 020">:active</dt>
           <dd class="section__container">
-            <h4 class="section__subtitle">Pseudoselctor of nth child</h4>
+            <h4 class="section__subtitle">Selector of active</h4>
             <figure>
               <blockquote>
-                <p>
-                  <code>
-                    about-us:nth-chid(1,2,3...n) {
-                    <p>background: blue;</p>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> &lt;a&gt; <br />
+                             &lt;/a&gt; <br /> </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
+                      a:active {
+                    <br>background: blue;</br>
                     }</code
                   >
                 </p>
+                  </li>
+                </ul>
               </blockquote>
             </figure>
           </dd>
-          <dt title="Specifity: 011">:not(...)</dt>
+          <dt title="Specifity: 020">:checked</dt>
           <dd class="section__container">
-            <h4 class="section__subtitle">Pseudoselctor of not</h4>
+            <h4 class="section__subtitle">Selector of checked</h4>
             <figure>
               <blockquote>
-                <p>
-                  <code>
-                    about-us:not(...) {
-                    <p>background: blue;</p>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> &lt;input&gt; </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
+                    input:focus {
+                    <br>background: blue;</br>
                     }</code
                   >
                 </p>
+                  </li>
+                </ul>
               </blockquote>
             </figure>
           </dd>
-          <dt title="Specifity: 011">:visited</dt>
+          <dt title="Specifity: 020">:disabled</dt>
           <dd class="section__container">
-            <h4 class="section__subtitle">Pseudoselctor visited</h4>
+            <h4 class="section__subtitle">Selector of disabled</h4>
             <figure>
               <blockquote>
-                <p>
-                  <code>
-                    about-us:visited {
-                    <p>background: blue;</p>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> &lt;input&gt; </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
+                    input:disabled {
+                    <br>background: blue;</br>
                     }</code
                   >
                 </p>
+                  </li>
+                </ul>
               </blockquote>
             </figure>
           </dd>
-          <dt title="Specifity: 011">:first-child</dt>
+          <dt title="Specifity: 020">:empty</dt>
           <dd class="section__container">
-            <h4 class="section__subtitle">Pseudoselctor of first-child</h4>
+            <h4 class="section__subtitle">Selector of empty</h4>
             <figure>
               <blockquote>
-                <p>
-                  <code>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> 
+                        &lt;div&gt; <br />
+                        &lt;/div&gt; <br /> 
+                      </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
+                      div:empty {
+                    <br>background: blue;</br>
+                    }</code
+                  >
+                </p>
+                  </li>
+                </ul>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 020">:enabled</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Selector of enabled</h4>
+            <figure>
+              <blockquote>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> &lt;input&gt; </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
+                    input:enabled {
+                    <br>background: blue;</br>
+                    }</code
+                  >
+                </p>
+                  </li>
+                </ul>
+              </blockquote>
+            </figure>
+          </dd>
+        </dl>
+        <h2 class="section__title-two">Pseudoselectors of place</h2>
+        <dl>
+          <dt title="Specifity: 020">:first-child</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Selector of first child</h4>
+            <figure>
+              <blockquote>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> &lt;section class="about-us"&gt; </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
                     about-us:first-child {
-                    <p>background: blue;</p>
+                    <br>background: blue;</br>
                     }</code
                   >
                 </p>
+                  </li>
+                </ul>
               </blockquote>
             </figure>
           </dd>
-          <dt title="Specifity: 011">:first-letter</dt>
+          <dt title="Specifity: 020">:last-child</dt>
           <dd class="section__container">
-            <h4 class="section__subtitle">Pseudoselctor of first letter</h4>
+            <h4 class="section__subtitle">Selector of last child</h4>
             <figure>
               <blockquote>
-                <p>
-                  <code>
-                    about-us:first-letter {
-                    <p>background: blue;</p>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> &lt;section class="about-us"&gt; </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
+                    about-us:last-child {
+                    <br>background: blue;</br>
                     }</code
                   >
                 </p>
+                  </li>
+                </ul>
               </blockquote>
             </figure>
           </dd>
-          <dt title="Specifity: 011">:first-line</dt>
+          <dt title="Specifity: 020">:nth-child</dt>
           <dd class="section__container">
-            <h4 class="section__subtitle">Pseudoselctor of first line</h4>
+            <h4 class="section__subtitle">Selector of nth child</h4>
             <figure>
               <blockquote>
-                <p>
-                  <code>
-                    about-us:first-line {
-                    <p>background: blue;</p>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> &lt;section class="about-us"&gt; </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
+                      about-us:nth-child {
+                    <br>background: blue;</br>
                     }</code
                   >
                 </p>
+                  </li>
+                </ul>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 020">:nth-last-child</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Selector of nth last child</h4>
+            <figure>
+              <blockquote>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> &lt;section class="about-us"&gt; </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
+                    about-us:nth-last-child {
+                    <br>background: blue;</br>
+                    }</code
+                  >
+                </p>
+                  </li>
+                </ul>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 020">:only-child</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Selector of only child</h4>
+            <figure>
+              <blockquote>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> &lt;section class="about-us"&gt; </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
+                    about-us:only-child {
+                    <br>background: blue;</br>
+                    }</code
+                  >
+                </p>
+                  </li>
+                </ul>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 020">:nth-last-of-type</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Selector of nth last of type</h4>
+            <figure>
+              <blockquote>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> &lt;section class="about-us"&gt; </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
+                      about-us:nth-last-of-type {
+                    <br>background: blue;</br>
+                    }</code
+                  >
+                </p>
+                  </li>
+                </ul>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 020">:nth-of-type</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Selector of nth of type</h4>
+            <figure>
+              <blockquote>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> &lt;section class="about-us"&gt; </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
+                    about-us:nth-of-type {
+                    <br>background: blue;</br>
+                    }</code
+                  >
+                </p>
+                  </li>
+                </ul>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 020">:only-of-type</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Selector of only of type</h4>
+            <figure>
+              <blockquote>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> 
+                        &lt;p&gt; 
+                        &lt;/p&gt;
+                      </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
+                    p:only-of-type {
+                    <br>background: blue;</br>
+                    }</code
+                  >
+                </p>
+                  </li>
+                </ul>
+              </blockquote>
+            </figure>
+          </dd>
+        </dl>
+        <h2 class="section__title-two">Pseudoselectors of negation</h2>
+        <dl>
+          <dt title="Specifity: 020">:not(...)</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Pseudoselctor not</h4>
+               <figure>
+              <blockquote>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code>
+                            &lt;li&gt; <br />
+                            &lt;/li&gt; <br />
+                            &lt;li&gt; <br />
+                            &lt;/li&gt; <br />
+                            &lt;li&gt; <br />
+                            &lt;/li&gt; <br />                         
+                      </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
+                     li:not(:last-child) {
+                    <br>background: blue;</br>
+                    }</code
+                  >
+                </p>
+                  </li>
+                </ul>
+              </blockquote>
+            </figure>
+          </dd>
+        </dl>
+        <h2 class="section__title-two">Pseudoelements</h2>
+        <dl>
+          <dt title="Specifity: 011">::before</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Selector of before</h4>
+            <figure>
+              <blockquote>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> &lt;p&gt; 
+                             &lt;/p&gt; 
+                      </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
+                     p::before {
+                    <br>background: blue;</br>
+                    }</code
+                  >
+                </p>
+                  </li>
+                </ul>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 011">::after</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Selector of after</h4>
+            <figure>
+              <blockquote>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code>  
+                        &lt;p&gt; 
+                        &lt;/p&gt;
+                      </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
+                     p::after {
+                    <br>background: blue;</br>
+                    }</code
+                  >
+                </p>
+                  </li>
+                </ul>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 011">::marker</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Selector of marker</h4>
+            <figure>
+              <blockquote>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> &lt;li&gt; <br />
+                             &lt;/li&gt; <br /> </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
+                      li::marker {
+                    <br>content: '✝ '; <br />
+                        font-size: 1.2em;</br>
+                    }</code
+                  >
+                </p>
+                  </li>
+                </ul>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 011">::first-line</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Selector of first line</h4>
+            <figure>
+              <blockquote>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code>
+                         &lt;p&gt; 
+                         &lt;/p&gt;
+                      </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
+                     p::first-line {
+                    <br>background: blue;</br>
+                    }</code
+                  >
+                </p>
+                  </li>
+                </ul>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 011">::first-letter</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Selector of first letter</h4>
+            <figure>
+              <blockquote>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code>
+                         &lt;p&gt; 
+                         &lt;/p&gt;
+                      </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
+                    p::first-letter {
+                    <br>background: blue;</br>
+                    }</code
+                  >
+                </p>
+                  </li>
+                </ul>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 011">::selection</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Selector of selection</h4>
+            <figure>
+              <blockquote>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> 
+                        &lt;h2&gt; <br />
+                        &lt;/h2&gt; <br /> 
+                      </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
+                      h2::selection {
+                    <br>background: blue;</br>
+                    }</code
+                  >
+                </p>
+                  </li>
+                </ul>
+              </blockquote>
+            </figure>
+          </dd>
+          <dt title="Specifity: 011">::placeholder</dt>
+          <dd class="section__container">
+            <h4 class="section__subtitle">Selector of placeholder</h4>
+            <figure>
+              <blockquote>
+                <ul>
+                  <li class="section__li">
+                    <h6 class="section__code">HTML</h6>
+                    <p>
+                      <code> &lt;input&gt; </code>
+                    </p>
+                  </li>
+                  <li class="section__li">
+                    <h6 class="section__code">CSS</h6>
+                    <p>
+                     <code>
+                    input::placeholder {
+                    <br>background: blue;</br>
+                    }</code
+                  >
+                </p>
+                  </li>
+                </ul>
               </blockquote>
             </figure>
           </dd>
